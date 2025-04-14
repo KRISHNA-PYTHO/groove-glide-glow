@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -96,6 +98,52 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-navy text-foreground font-montserrat;
   }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-blueStart to-purpleEnd bg-clip-text text-transparent;
+  }
+  
+  .btn-primary {
+    @apply bg-violet text-white font-semibold px-6 py-3 rounded-full 
+           shadow-lg hover:shadow-violet/50 transition-all duration-300 
+           hover:scale-105 hover:shadow-xl;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:scale-105 hover:shadow-xl;
+  }
+  
+  .neon-glow {
+    @apply hover:shadow-[0_0_15px_rgba(149,109,255,0.8)];
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse 2s ease-in-out infinite;
 }
