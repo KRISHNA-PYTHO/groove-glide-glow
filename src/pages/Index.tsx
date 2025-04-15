@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
@@ -238,136 +237,83 @@ const Index = () => {
       {/* Hire Us Section */}
       <section ref={hireRef} className="py-20 bg-navy">
         <div className="container mx-auto px-4">
-          <h2 className="hire-anim text-3xl md:text-4xl font-bold text-center mb-4">
-            <span className="gradient-text">Hire Us</span>
-          </h2>
+          <div className="flex items-center justify-between mb-8">
+            <h2 className="hire-anim text-3xl md:text-4xl font-bold">
+              <span className="gradient-text">Hire Us</span>
+            </h2>
+            <Link to="#" className="text-sm text-violet hover:text-white transition-colors">
+              See all
+            </Link>
+          </div>
           <p className="hire-anim text-center text-gray-300 max-w-2xl mx-auto mb-12">
             Hire the country's top choreographers for weddings, school functions, and corporate events.
           </p>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {/* Dancer 1 */}
-            <div className="hire-anim">
-              <div className="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden hover:shadow-lg hover:shadow-violet/20 transition-all duration-300 group">
-                <div className="h-60 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent z-10"></div>
-                  <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity z-20"></div>
-                  <img 
-                    src="https://images.unsplash.com/photo-1583456236795-7d3d3a1b0d26" 
-                    alt="Priya Sharma" 
-                    className="w-full h-full object-cover object-top"
-                  />
-                  
-                  {/* Flip content - skills */}
-                  <div className="absolute inset-0 flex flex-col justify-center items-center bg-gradient-to-r from-blueStart/80 to-purpleEnd/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-30 p-4 text-center">
-                    <h4 className="text-lg font-bold mb-1">Specializes in</h4>
-                    <p className="text-white mb-2">Contemporary, Hip-Hop, Jazz</p>
-                    <h4 className="text-lg font-bold mb-1">Experience</h4>
-                    <p className="text-white">10+ years, Choreographed for Bollywood films</p>
+            <div className="hire-anim flex flex-col items-center">
+              <div className="relative group">
+                <div className="w-40 h-40 rounded-full overflow-hidden border-2 border-violet bg-gradient-to-r from-blueStart to-purpleEnd p-1">
+                  <div className="w-full h-full rounded-full overflow-hidden">
+                    <img 
+                      src="https://images.unsplash.com/photo-1583456236795-7d3d3a1b0d26" 
+                      alt="Ganesh Acharya" 
+                      className="w-full h-full object-cover object-top"
+                    />
                   </div>
                 </div>
-                
-                <div className="p-5">
-                  <h3 className="text-lg font-bold mb-1">Priya Sharma</h3>
-                  <p className="text-gray-300 text-sm mb-3">Senior Choreographer</p>
-                  <button className="w-full text-sm py-2 rounded-full bg-violet hover:bg-violet/80 transition-colors neon-glow">
+                <div className="absolute inset-0 bg-violet/40 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <button className="bg-white text-navy font-bold py-2 px-4 rounded-full">
                     Book Now
                   </button>
                 </div>
               </div>
+              <h3 className="text-lg font-bold mt-4 mb-1">Ganesh Acharya</h3>
+              <p className="text-violet text-sm">Choreographer</p>
             </div>
             
             {/* Dancer 2 */}
-            <div className="hire-anim">
-              <div className="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden hover:shadow-lg hover:shadow-violet/20 transition-all duration-300 group">
-                <div className="h-60 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent z-10"></div>
-                  <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity z-20"></div>
-                  <img 
-                    src="https://images.unsplash.com/photo-1531384370597-8590413c5570" 
-                    alt="Arjun Kapoor" 
-                    className="w-full h-full object-cover object-top"
-                  />
-                  
-                  {/* Flip content - skills */}
-                  <div className="absolute inset-0 flex flex-col justify-center items-center bg-gradient-to-r from-blueStart/80 to-purpleEnd/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-30 p-4 text-center">
-                    <h4 className="text-lg font-bold mb-1">Specializes in</h4>
-                    <p className="text-white mb-2">Bollywood, Hip-Hop, Breaking</p>
-                    <h4 className="text-lg font-bold mb-1">Experience</h4>
-                    <p className="text-white">8+ years, Stage performances worldwide</p>
+            <div className="hire-anim flex flex-col items-center">
+              <div className="relative group">
+                <div className="w-40 h-40 rounded-full overflow-hidden border-2 border-violet bg-gradient-to-r from-blueStart to-purpleEnd p-1">
+                  <div className="w-full h-full rounded-full overflow-hidden">
+                    <img 
+                      src="https://images.unsplash.com/photo-1531384370597-8590413c5570" 
+                      alt="Terrance Lewis" 
+                      className="w-full h-full object-cover object-top"
+                    />
                   </div>
                 </div>
-                
-                <div className="p-5">
-                  <h3 className="text-lg font-bold mb-1">Arjun Kapoor</h3>
-                  <p className="text-gray-300 text-sm mb-3">Performance Lead</p>
-                  <button className="w-full text-sm py-2 rounded-full bg-violet hover:bg-violet/80 transition-colors neon-glow">
+                <div className="absolute inset-0 bg-violet/40 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <button className="bg-white text-navy font-bold py-2 px-4 rounded-full">
                     Book Now
                   </button>
                 </div>
               </div>
+              <h3 className="text-lg font-bold mt-4 mb-1">Terrance Lewis</h3>
+              <p className="text-violet text-sm">Choreographer</p>
             </div>
             
             {/* Dancer 3 */}
-            <div className="hire-anim">
-              <div className="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden hover:shadow-lg hover:shadow-violet/20 transition-all duration-300 group">
-                <div className="h-60 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent z-10"></div>
-                  <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity z-20"></div>
-                  <img 
-                    src="https://images.unsplash.com/photo-1534931691232-23657e5a239a" 
-                    alt="Maya Desai" 
-                    className="w-full h-full object-cover object-top"
-                  />
-                  
-                  {/* Flip content - skills */}
-                  <div className="absolute inset-0 flex flex-col justify-center items-center bg-gradient-to-r from-blueStart/80 to-purpleEnd/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-30 p-4 text-center">
-                    <h4 className="text-lg font-bold mb-1">Specializes in</h4>
-                    <p className="text-white mb-2">Classical, Kathak, Folk</p>
-                    <h4 className="text-lg font-bold mb-1">Experience</h4>
-                    <p className="text-white">15+ years, National award winner</p>
+            <div className="hire-anim flex flex-col items-center">
+              <div className="relative group">
+                <div className="w-40 h-40 rounded-full overflow-hidden border-2 border-violet bg-gradient-to-r from-blueStart to-purpleEnd p-1">
+                  <div className="w-full h-full rounded-full overflow-hidden">
+                    <img 
+                      src="https://images.unsplash.com/photo-1517877086037-561809275d76" 
+                      alt="Remo D'Souza" 
+                      className="w-full h-full object-cover object-top"
+                    />
                   </div>
                 </div>
-                
-                <div className="p-5">
-                  <h3 className="text-lg font-bold mb-1">Maya Desai</h3>
-                  <p className="text-gray-300 text-sm mb-3">Classical Expert</p>
-                  <button className="w-full text-sm py-2 rounded-full bg-violet hover:bg-violet/80 transition-colors neon-glow">
+                <div className="absolute inset-0 bg-violet/40 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <button className="bg-white text-navy font-bold py-2 px-4 rounded-full">
                     Book Now
                   </button>
                 </div>
               </div>
-            </div>
-            
-            {/* Dancer 4 */}
-            <div className="hire-anim">
-              <div className="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden hover:shadow-lg hover:shadow-violet/20 transition-all duration-300 group">
-                <div className="h-60 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-transparent z-10"></div>
-                  <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity z-20"></div>
-                  <img 
-                    src="https://images.unsplash.com/photo-1517877086037-561809275d76" 
-                    alt="Rahul Shah" 
-                    className="w-full h-full object-cover object-top"
-                  />
-                  
-                  {/* Flip content - skills */}
-                  <div className="absolute inset-0 flex flex-col justify-center items-center bg-gradient-to-r from-blueStart/80 to-purpleEnd/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-30 p-4 text-center">
-                    <h4 className="text-lg font-bold mb-1">Specializes in</h4>
-                    <p className="text-white mb-2">Freestyle, Breaking, Popping</p>
-                    <h4 className="text-lg font-bold mb-1">Experience</h4>
-                    <p className="text-white">7+ years, International dance battles</p>
-                  </div>
-                </div>
-                
-                <div className="p-5">
-                  <h3 className="text-lg font-bold mb-1">Rahul Shah</h3>
-                  <p className="text-gray-300 text-sm mb-3">Urban Dance Specialist</p>
-                  <button className="w-full text-sm py-2 rounded-full bg-violet hover:bg-violet/80 transition-colors neon-glow">
-                    Book Now
-                  </button>
-                </div>
-              </div>
+              <h3 className="text-lg font-bold mt-4 mb-1">Remo D'Souza</h3>
+              <p className="text-violet text-sm">Choreographer</p>
             </div>
           </div>
           
