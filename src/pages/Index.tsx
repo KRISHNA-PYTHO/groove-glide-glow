@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
@@ -252,10 +251,10 @@ const Index = () => {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Dancer 1 */}
-            <div className="hire-anim flex flex-col items-center">
-              <div className="relative group">
-                <div className="w-40 h-40 rounded-full overflow-hidden border-2 border-violet bg-gradient-to-r from-blueStart to-purpleEnd p-1">
-                  <div className="w-full h-full rounded-full overflow-hidden">
+            <div className="hire-anim flex flex-col items-center group">
+              <div className="relative">
+                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-transparent group-hover:border-violet transition-all duration-300 bg-gradient-to-r from-blueStart to-purpleEnd p-1">
+                  <div className="w-full h-full rounded-full overflow-hidden transform group-hover:scale-105 transition-transform duration-300">
                     <img 
                       src="https://images.unsplash.com/photo-1583456236795-7d3d3a1b0d26" 
                       alt="Ganesh Acharya" 
@@ -264,20 +263,20 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="absolute inset-0 bg-violet/40 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <button className="bg-white text-navy font-bold py-2 px-4 rounded-full">
+                  <button className="bg-white text-navy font-bold py-2 px-4 rounded-full transform group-hover:scale-110 transition-transform duration-300 hover:bg-navy hover:text-white">
                     Book Now
                   </button>
                 </div>
               </div>
-              <h3 className="text-lg font-bold mt-4 mb-1">Ganesh Acharya</h3>
-              <p className="text-violet text-sm">Choreographer</p>
+              <h3 className="text-lg font-bold mt-4 mb-1 group-hover:text-violet transition-colors duration-300">Ganesh Acharya</h3>
+              <p className="text-gray-400 text-sm group-hover:text-violet transition-colors duration-300">Choreographer</p>
             </div>
             
             {/* Dancer 2 */}
-            <div className="hire-anim flex flex-col items-center">
-              <div className="relative group">
-                <div className="w-40 h-40 rounded-full overflow-hidden border-2 border-violet bg-gradient-to-r from-blueStart to-purpleEnd p-1">
-                  <div className="w-full h-full rounded-full overflow-hidden">
+            <div className="hire-anim flex flex-col items-center group">
+              <div className="relative">
+                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-transparent group-hover:border-violet transition-all duration-300 bg-gradient-to-r from-blueStart to-purpleEnd p-1">
+                  <div className="w-full h-full rounded-full overflow-hidden transform group-hover:scale-105 transition-transform duration-300">
                     <img 
                       src="https://images.unsplash.com/photo-1531384370597-8590413c5570" 
                       alt="Terrance Lewis" 
@@ -286,20 +285,20 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="absolute inset-0 bg-violet/40 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <button className="bg-white text-navy font-bold py-2 px-4 rounded-full">
+                  <button className="bg-white text-navy font-bold py-2 px-4 rounded-full transform group-hover:scale-110 transition-transform duration-300 hover:bg-navy hover:text-white">
                     Book Now
                   </button>
                 </div>
               </div>
-              <h3 className="text-lg font-bold mt-4 mb-1">Terrance Lewis</h3>
-              <p className="text-violet text-sm">Choreographer</p>
+              <h3 className="text-lg font-bold mt-4 mb-1 group-hover:text-violet transition-colors duration-300">Terrance Lewis</h3>
+              <p className="text-gray-400 text-sm group-hover:text-violet transition-colors duration-300">Choreographer</p>
             </div>
             
             {/* Dancer 3 */}
-            <div className="hire-anim flex flex-col items-center">
-              <div className="relative group">
-                <div className="w-40 h-40 rounded-full overflow-hidden border-2 border-violet bg-gradient-to-r from-blueStart to-purpleEnd p-1">
-                  <div className="w-full h-full rounded-full overflow-hidden">
+            <div className="hire-anim flex flex-col items-center group">
+              <div className="relative">
+                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-transparent group-hover:border-violet transition-all duration-300 bg-gradient-to-r from-blueStart to-purpleEnd p-1">
+                  <div className="w-full h-full rounded-full overflow-hidden transform group-hover:scale-105 transition-transform duration-300">
                     <img 
                       src="https://images.unsplash.com/photo-1517877086037-561809275d76" 
                       alt="Remo D'Souza" 
@@ -308,20 +307,20 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="absolute inset-0 bg-violet/40 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <button className="bg-white text-navy font-bold py-2 px-4 rounded-full">
+                  <button className="bg-white text-navy font-bold py-2 px-4 rounded-full transform group-hover:scale-110 transition-transform duration-300 hover:bg-navy hover:text-white">
                     Book Now
                   </button>
                 </div>
               </div>
-              <h3 className="text-lg font-bold mt-4 mb-1">Remo D'Souza</h3>
-              <p className="text-violet text-sm">Choreographer</p>
+              <h3 className="text-lg font-bold mt-4 mb-1 group-hover:text-violet transition-colors duration-300">Remo D'Souza</h3>
+              <p className="text-gray-400 text-sm group-hover:text-violet transition-colors duration-300">Choreographer</p>
             </div>
             
             {/* Dancer 4 */}
-            <div className="hire-anim flex flex-col items-center">
-              <div className="relative group">
-                <div className="w-40 h-40 rounded-full overflow-hidden border-2 border-violet bg-gradient-to-r from-blueStart to-purpleEnd p-1">
-                  <div className="w-full h-full rounded-full overflow-hidden">
+            <div className="hire-anim flex flex-col items-center group">
+              <div className="relative">
+                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-transparent group-hover:border-violet transition-all duration-300 bg-gradient-to-r from-blueStart to-purpleEnd p-1">
+                  <div className="w-full h-full rounded-full overflow-hidden transform group-hover:scale-105 transition-transform duration-300">
                     <img 
                       src="https://images.unsplash.com/photo-1541216970279-affbfdd55aa8" 
                       alt="Farah Khan" 
@@ -330,20 +329,20 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="absolute inset-0 bg-violet/40 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <button className="bg-white text-navy font-bold py-2 px-4 rounded-full">
+                  <button className="bg-white text-navy font-bold py-2 px-4 rounded-full transform group-hover:scale-110 transition-transform duration-300 hover:bg-navy hover:text-white">
                     Book Now
                   </button>
                 </div>
               </div>
-              <h3 className="text-lg font-bold mt-4 mb-1">Farah Khan</h3>
-              <p className="text-violet text-sm">Choreographer</p>
+              <h3 className="text-lg font-bold mt-4 mb-1 group-hover:text-violet transition-colors duration-300">Farah Khan</h3>
+              <p className="text-gray-400 text-sm group-hover:text-violet transition-colors duration-300">Choreographer</p>
             </div>
             
             {/* Dancer 5 */}
-            <div className="hire-anim flex flex-col items-center">
-              <div className="relative group">
-                <div className="w-40 h-40 rounded-full overflow-hidden border-2 border-violet bg-gradient-to-r from-blueStart to-purpleEnd p-1">
-                  <div className="w-full h-full rounded-full overflow-hidden">
+            <div className="hire-anim flex flex-col items-center group">
+              <div className="relative">
+                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-transparent group-hover:border-violet transition-all duration-300 bg-gradient-to-r from-blueStart to-purpleEnd p-1">
+                  <div className="w-full h-full rounded-full overflow-hidden transform group-hover:scale-105 transition-transform duration-300">
                     <img 
                       src="https://images.unsplash.com/photo-1633666970002-5240a461a31d" 
                       alt="Prabhu Deva" 
@@ -352,20 +351,20 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="absolute inset-0 bg-violet/40 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <button className="bg-white text-navy font-bold py-2 px-4 rounded-full">
+                  <button className="bg-white text-navy font-bold py-2 px-4 rounded-full transform group-hover:scale-110 transition-transform duration-300 hover:bg-navy hover:text-white">
                     Book Now
                   </button>
                 </div>
               </div>
-              <h3 className="text-lg font-bold mt-4 mb-1">Prabhu Deva</h3>
-              <p className="text-violet text-sm">Choreographer</p>
+              <h3 className="text-lg font-bold mt-4 mb-1 group-hover:text-violet transition-colors duration-300">Prabhu Deva</h3>
+              <p className="text-gray-400 text-sm group-hover:text-violet transition-colors duration-300">Choreographer</p>
             </div>
             
             {/* Dancer 6 */}
-            <div className="hire-anim flex flex-col items-center">
-              <div className="relative group">
-                <div className="w-40 h-40 rounded-full overflow-hidden border-2 border-violet bg-gradient-to-r from-blueStart to-purpleEnd p-1">
-                  <div className="w-full h-full rounded-full overflow-hidden">
+            <div className="hire-anim flex flex-col items-center group">
+              <div className="relative">
+                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-transparent group-hover:border-violet transition-all duration-300 bg-gradient-to-r from-blueStart to-purpleEnd p-1">
+                  <div className="w-full h-full rounded-full overflow-hidden transform group-hover:scale-105 transition-transform duration-300">
                     <img 
                       src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5" 
                       alt="Shiamak Davar" 
@@ -374,13 +373,13 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="absolute inset-0 bg-violet/40 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <button className="bg-white text-navy font-bold py-2 px-4 rounded-full">
+                  <button className="bg-white text-navy font-bold py-2 px-4 rounded-full transform group-hover:scale-110 transition-transform duration-300 hover:bg-navy hover:text-white">
                     Book Now
                   </button>
                 </div>
               </div>
-              <h3 className="text-lg font-bold mt-4 mb-1">Shiamak Davar</h3>
-              <p className="text-violet text-sm">Choreographer</p>
+              <h3 className="text-lg font-bold mt-4 mb-1 group-hover:text-violet transition-colors duration-300">Shiamak Davar</h3>
+              <p className="text-gray-400 text-sm group-hover:text-violet transition-colors duration-300">Choreographer</p>
             </div>
           </div>
           
