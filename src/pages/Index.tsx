@@ -1,3 +1,4 @@
+
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
@@ -65,6 +66,8 @@ const Index = () => {
           },
         }
       );
+      
+      // Enhanced hover animations are applied via CSS classes
     }
     
     // Global Dance section animation
@@ -251,142 +254,148 @@ const Index = () => {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Dancer 1 */}
-            <div className="hire-anim flex flex-col items-center group">
+            <div className="hire-anim flex flex-col items-center group cursor-pointer transform transition-all duration-500 hover:-translate-y-2">
               <div className="relative">
-                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-transparent group-hover:border-violet transition-all duration-300 bg-gradient-to-r from-blueStart to-purpleEnd p-1">
-                  <div className="w-full h-full rounded-full overflow-hidden transform group-hover:scale-105 transition-transform duration-300">
+                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-transparent group-hover:border-violet transition-all duration-500 bg-gradient-to-r from-blueStart to-purpleEnd p-1">
+                  <div className="w-full h-full rounded-full overflow-hidden transform group-hover:scale-110 transition-transform duration-500">
                     <img 
-                      src="https://images.unsplash.com/photo-1583456236795-7d3d3a1b0d26" 
+                      src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" 
                       alt="Ganesh Acharya" 
                       className="w-full h-full object-cover object-top"
                     />
                   </div>
-                </div>
-                <div className="absolute inset-0 bg-violet/40 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <button className="bg-white text-navy font-bold py-2 px-4 rounded-full transform group-hover:scale-110 transition-transform duration-300 hover:bg-navy hover:text-white">
-                    Book Now
-                  </button>
+                  <div className="absolute inset-0 bg-gradient-to-b from-violet/0 via-violet/30 to-violet/70 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                    <button className="bg-white text-navy font-bold py-2 px-4 rounded-full transform scale-0 group-hover:scale-110 transition-all duration-500 ease-in-out hover:bg-navy hover:text-white hover:shadow-lg hover:shadow-violet/50">
+                      Book Now
+                    </button>
+                  </div>
                 </div>
               </div>
               <h3 className="text-lg font-bold mt-4 mb-1 group-hover:text-violet transition-colors duration-300">Ganesh Acharya</h3>
               <p className="text-gray-400 text-sm group-hover:text-violet transition-colors duration-300">Choreographer</p>
+              <div className="h-1 w-0 bg-gradient-to-r from-blueStart to-purpleEnd group-hover:w-full transition-all duration-500 mt-2 rounded-full"></div>
             </div>
             
             {/* Dancer 2 */}
-            <div className="hire-anim flex flex-col items-center group">
+            <div className="hire-anim flex flex-col items-center group cursor-pointer transform transition-all duration-500 hover:-translate-y-2">
               <div className="relative">
-                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-transparent group-hover:border-violet transition-all duration-300 bg-gradient-to-r from-blueStart to-purpleEnd p-1">
-                  <div className="w-full h-full rounded-full overflow-hidden transform group-hover:scale-105 transition-transform duration-300">
+                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-transparent group-hover:border-violet transition-all duration-500 bg-gradient-to-r from-blueStart to-purpleEnd p-1">
+                  <div className="w-full h-full rounded-full overflow-hidden transform group-hover:scale-110 transition-transform duration-500">
                     <img 
-                      src="https://images.unsplash.com/photo-1531384370597-8590413c5570" 
+                      src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" 
                       alt="Terrance Lewis" 
                       className="w-full h-full object-cover object-top"
                     />
                   </div>
-                </div>
-                <div className="absolute inset-0 bg-violet/40 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <button className="bg-white text-navy font-bold py-2 px-4 rounded-full transform group-hover:scale-110 transition-transform duration-300 hover:bg-navy hover:text-white">
-                    Book Now
-                  </button>
+                  <div className="absolute inset-0 bg-gradient-to-b from-violet/0 via-violet/30 to-violet/70 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                    <button className="bg-white text-navy font-bold py-2 px-4 rounded-full transform scale-0 group-hover:scale-110 transition-all duration-500 ease-in-out hover:bg-navy hover:text-white hover:shadow-lg hover:shadow-violet/50">
+                      Book Now
+                    </button>
+                  </div>
                 </div>
               </div>
               <h3 className="text-lg font-bold mt-4 mb-1 group-hover:text-violet transition-colors duration-300">Terrance Lewis</h3>
               <p className="text-gray-400 text-sm group-hover:text-violet transition-colors duration-300">Choreographer</p>
+              <div className="h-1 w-0 bg-gradient-to-r from-blueStart to-purpleEnd group-hover:w-full transition-all duration-500 mt-2 rounded-full"></div>
             </div>
             
             {/* Dancer 3 */}
-            <div className="hire-anim flex flex-col items-center group">
+            <div className="hire-anim flex flex-col items-center group cursor-pointer transform transition-all duration-500 hover:-translate-y-2">
               <div className="relative">
-                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-transparent group-hover:border-violet transition-all duration-300 bg-gradient-to-r from-blueStart to-purpleEnd p-1">
-                  <div className="w-full h-full rounded-full overflow-hidden transform group-hover:scale-105 transition-transform duration-300">
+                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-transparent group-hover:border-violet transition-all duration-500 bg-gradient-to-r from-blueStart to-purpleEnd p-1">
+                  <div className="w-full h-full rounded-full overflow-hidden transform group-hover:scale-110 transition-transform duration-500">
                     <img 
-                      src="https://images.unsplash.com/photo-1517877086037-561809275d76" 
+                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" 
                       alt="Remo D'Souza" 
                       className="w-full h-full object-cover object-top"
                     />
                   </div>
-                </div>
-                <div className="absolute inset-0 bg-violet/40 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <button className="bg-white text-navy font-bold py-2 px-4 rounded-full transform group-hover:scale-110 transition-transform duration-300 hover:bg-navy hover:text-white">
-                    Book Now
-                  </button>
+                  <div className="absolute inset-0 bg-gradient-to-b from-violet/0 via-violet/30 to-violet/70 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                    <button className="bg-white text-navy font-bold py-2 px-4 rounded-full transform scale-0 group-hover:scale-110 transition-all duration-500 ease-in-out hover:bg-navy hover:text-white hover:shadow-lg hover:shadow-violet/50">
+                      Book Now
+                    </button>
+                  </div>
                 </div>
               </div>
               <h3 className="text-lg font-bold mt-4 mb-1 group-hover:text-violet transition-colors duration-300">Remo D'Souza</h3>
               <p className="text-gray-400 text-sm group-hover:text-violet transition-colors duration-300">Choreographer</p>
+              <div className="h-1 w-0 bg-gradient-to-r from-blueStart to-purpleEnd group-hover:w-full transition-all duration-500 mt-2 rounded-full"></div>
             </div>
             
             {/* Dancer 4 */}
-            <div className="hire-anim flex flex-col items-center group">
+            <div className="hire-anim flex flex-col items-center group cursor-pointer transform transition-all duration-500 hover:-translate-y-2">
               <div className="relative">
-                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-transparent group-hover:border-violet transition-all duration-300 bg-gradient-to-r from-blueStart to-purpleEnd p-1">
-                  <div className="w-full h-full rounded-full overflow-hidden transform group-hover:scale-105 transition-transform duration-300">
+                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-transparent group-hover:border-violet transition-all duration-500 bg-gradient-to-r from-blueStart to-purpleEnd p-1">
+                  <div className="w-full h-full rounded-full overflow-hidden transform group-hover:scale-110 transition-transform duration-500">
                     <img 
-                      src="https://images.unsplash.com/photo-1541216970279-affbfdd55aa8" 
+                      src="https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" 
                       alt="Farah Khan" 
                       className="w-full h-full object-cover object-top"
                     />
                   </div>
-                </div>
-                <div className="absolute inset-0 bg-violet/40 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <button className="bg-white text-navy font-bold py-2 px-4 rounded-full transform group-hover:scale-110 transition-transform duration-300 hover:bg-navy hover:text-white">
-                    Book Now
-                  </button>
+                  <div className="absolute inset-0 bg-gradient-to-b from-violet/0 via-violet/30 to-violet/70 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                    <button className="bg-white text-navy font-bold py-2 px-4 rounded-full transform scale-0 group-hover:scale-110 transition-all duration-500 ease-in-out hover:bg-navy hover:text-white hover:shadow-lg hover:shadow-violet/50">
+                      Book Now
+                    </button>
+                  </div>
                 </div>
               </div>
               <h3 className="text-lg font-bold mt-4 mb-1 group-hover:text-violet transition-colors duration-300">Farah Khan</h3>
               <p className="text-gray-400 text-sm group-hover:text-violet transition-colors duration-300">Choreographer</p>
+              <div className="h-1 w-0 bg-gradient-to-r from-blueStart to-purpleEnd group-hover:w-full transition-all duration-500 mt-2 rounded-full"></div>
             </div>
             
             {/* Dancer 5 */}
-            <div className="hire-anim flex flex-col items-center group">
+            <div className="hire-anim flex flex-col items-center group cursor-pointer transform transition-all duration-500 hover:-translate-y-2">
               <div className="relative">
-                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-transparent group-hover:border-violet transition-all duration-300 bg-gradient-to-r from-blueStart to-purpleEnd p-1">
-                  <div className="w-full h-full rounded-full overflow-hidden transform group-hover:scale-105 transition-transform duration-300">
+                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-transparent group-hover:border-violet transition-all duration-500 bg-gradient-to-r from-blueStart to-purpleEnd p-1">
+                  <div className="w-full h-full rounded-full overflow-hidden transform group-hover:scale-110 transition-transform duration-500">
                     <img 
-                      src="https://images.unsplash.com/photo-1633666970002-5240a461a31d" 
+                      src="https://images.unsplash.com/photo-1500048993953-d23a436266cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" 
                       alt="Prabhu Deva" 
                       className="w-full h-full object-cover object-top"
                     />
                   </div>
-                </div>
-                <div className="absolute inset-0 bg-violet/40 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <button className="bg-white text-navy font-bold py-2 px-4 rounded-full transform group-hover:scale-110 transition-transform duration-300 hover:bg-navy hover:text-white">
-                    Book Now
-                  </button>
+                  <div className="absolute inset-0 bg-gradient-to-b from-violet/0 via-violet/30 to-violet/70 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                    <button className="bg-white text-navy font-bold py-2 px-4 rounded-full transform scale-0 group-hover:scale-110 transition-all duration-500 ease-in-out hover:bg-navy hover:text-white hover:shadow-lg hover:shadow-violet/50">
+                      Book Now
+                    </button>
+                  </div>
                 </div>
               </div>
               <h3 className="text-lg font-bold mt-4 mb-1 group-hover:text-violet transition-colors duration-300">Prabhu Deva</h3>
               <p className="text-gray-400 text-sm group-hover:text-violet transition-colors duration-300">Choreographer</p>
+              <div className="h-1 w-0 bg-gradient-to-r from-blueStart to-purpleEnd group-hover:w-full transition-all duration-500 mt-2 rounded-full"></div>
             </div>
             
             {/* Dancer 6 */}
-            <div className="hire-anim flex flex-col items-center group">
+            <div className="hire-anim flex flex-col items-center group cursor-pointer transform transition-all duration-500 hover:-translate-y-2">
               <div className="relative">
-                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-transparent group-hover:border-violet transition-all duration-300 bg-gradient-to-r from-blueStart to-purpleEnd p-1">
-                  <div className="w-full h-full rounded-full overflow-hidden transform group-hover:scale-105 transition-transform duration-300">
+                <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-transparent group-hover:border-violet transition-all duration-500 bg-gradient-to-r from-blueStart to-purpleEnd p-1">
+                  <div className="w-full h-full rounded-full overflow-hidden transform group-hover:scale-110 transition-transform duration-500">
                     <img 
-                      src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5" 
+                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" 
                       alt="Shiamak Davar" 
                       className="w-full h-full object-cover object-top"
                     />
                   </div>
-                </div>
-                <div className="absolute inset-0 bg-violet/40 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                  <button className="bg-white text-navy font-bold py-2 px-4 rounded-full transform group-hover:scale-110 transition-transform duration-300 hover:bg-navy hover:text-white">
-                    Book Now
-                  </button>
+                  <div className="absolute inset-0 bg-gradient-to-b from-violet/0 via-violet/30 to-violet/70 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                    <button className="bg-white text-navy font-bold py-2 px-4 rounded-full transform scale-0 group-hover:scale-110 transition-all duration-500 ease-in-out hover:bg-navy hover:text-white hover:shadow-lg hover:shadow-violet/50">
+                      Book Now
+                    </button>
+                  </div>
                 </div>
               </div>
               <h3 className="text-lg font-bold mt-4 mb-1 group-hover:text-violet transition-colors duration-300">Shiamak Davar</h3>
               <p className="text-gray-400 text-sm group-hover:text-violet transition-colors duration-300">Choreographer</p>
+              <div className="h-1 w-0 bg-gradient-to-r from-blueStart to-purpleEnd group-hover:w-full transition-all duration-500 mt-2 rounded-full"></div>
             </div>
           </div>
           
           <div className="hire-anim mt-12 text-center">
-            <a href="#" className="inline-flex items-center text-violet hover:text-white transition-colors gap-1">
-              <Users className="h-5 w-5" />
-              <span className="underline underline-offset-4">View All Dancers</span>
+            <a href="#" className="inline-flex items-center text-violet hover:text-white transition-colors gap-1 group">
+              <Users className="h-5 w-5 group-hover:rotate-12 transition-transform duration-300" />
+              <span className="underline underline-offset-4 group-hover:underline-offset-8 transition-all duration-300">View All Dancers</span>
             </a>
           </div>
         </div>
